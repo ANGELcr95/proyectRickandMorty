@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.Resident{
+    margin-bottom: 1rem;
+    animation-duration: 1.7s;
+    animation-name: slidein;
+}
+
+.TextResidentInfo{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: rgba(59, 59, 59, 0.781);
+    width: 300px;
+    margin: auto;
+    border-top:  0.3rem solid rgb(127, 231, 41);
+}
+
+.TextResidentInfo:hover{
+  background-color: rgba(178, 233, 90, 0.911);
+  border-top:  0.3rem solid rgb(41, 171, 231);
+  cursor: pointer;
+}
+
+.Name{
+    font-size: 2rem;
+    color: rgb(241, 59, 26);
+    font-weight:100;
+}
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }

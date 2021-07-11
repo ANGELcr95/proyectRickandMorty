@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.LocationInfo{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: auto;
+
+}
+.LocationInfo h3{
+    font-family: 'Creepster', cursive;
+    font-size: 2.6rem;
+    color:rgb(27, 26, 26);
+    -webkit-text-stroke: 1px rgb(248, 248, 248);
+
+}
