@@ -38,7 +38,8 @@ function App() {
 
   useEffect(()=> {
     if(dataLocationTotal.length){
-      setLocation(dataLocationTotal[Math.round(Math.random()*108)].url)
+      setLocation(dataLocationTotal[Math.round(Math.random()*dataLocationTotal.length)].url)
+      console.log(location)
     }
   },[dataLocationTotal])
   
@@ -52,6 +53,7 @@ function App() {
     }
   }
   setLocationValue()
+  console.log(location)
   
   return (
     <div className="App">
