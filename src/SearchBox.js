@@ -8,7 +8,9 @@ const SearchBox= ({location} ) => {
   return (
     <div className='Search-location'>
         <input placeholder="Location" onKeyDown={(e)=>{
-            location(value)
+            if(e.key === 'Enter'){
+                location(value)
+            }
         }} onChange = {(e)=>{
             setValue(e.target.value)
         }}>
