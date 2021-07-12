@@ -14,14 +14,14 @@ const LocationContainer= ({ubicationUrl}) => {
     const[loading, setLoading] = useState(true)
 
     useEffect(() => {
-        if(ubicationUrl){
-            const fetchUbication = async () => {
-              const dataUbication = await fetch(ubicationUrl).then(respon => respon.json())
-              setUbication(dataUbication)
-              setResidents(dataUbication.residents)
-            }
-            fetchUbication()
+      if(ubicationUrl){
+        const fetchUbication = async () => {
+          const dataUbication = await fetch(ubicationUrl).then(respon => respon.json())
+          setUbication(dataUbication)
+          setResidents(dataUbication.residents)
         }
+        fetchUbication()
+      }
     },[ubicationUrl])
 
     const indexOfLastPost = currentPage * postsPerPage
@@ -39,13 +39,13 @@ const LocationContainer= ({ubicationUrl}) => {
 
   return (
     <div>
-        <LocationInfo name={ubication.name} type={ubication.type} dimension={ubication.dimension}/>
-        <div className="Pagination">
-          <Pagination postsPerPage={postsPerPage} totalPosts={residents.length} paginate={paginate}/>
-        </div>
-        <div className="ListResidents">
-          {listResidentSlice}
-        </div>
+      <LocationInfo name={ubication.name} type={ubication.type} dimension={ubication.dimension}/>
+      <div className="Pagination">
+        <Pagination postsPerPage={postsPerPage} totalPosts={residents.length} paginate={paginate}/>
+      </div>
+      <div className="ListResidents">
+        {listResidentSlice}
+      </div>
     </div>
   )
 }

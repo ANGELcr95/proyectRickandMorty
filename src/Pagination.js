@@ -14,7 +14,6 @@ const Pagination = ({postsPerPage, totalPosts, paginate}) => {
             </nav>
             <div className="NoCharacters">
                 {totalPosts== 0 && <h2>There are no residents in this location!</h2>}
-                
             </div>
         </div>
     )

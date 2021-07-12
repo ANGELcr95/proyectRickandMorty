@@ -17,19 +17,19 @@ function App() {
   const[location, setLocation] = useState('')
 
   useEffect(()=> {
-      for (let numberPage = 1; numberPage < 7; numberPage++){
-        const fetchLocation = async () => {
-          let urlLocation = `https://rickandmortyapi.com/api/location?page=${numberPage}`
-          let dataLocation = await fetch(urlLocation).then(respon => respon.json())
-          numberPage == 1? setLocationPage1(dataLocation.results): null
-          numberPage == 2? setLocationPage2(dataLocation.results): null
-          numberPage == 3? setLocationPage3(dataLocation.results): null
-          numberPage == 4? setLocationPage4(dataLocation.results): null
-          numberPage == 5? setLocationPage5(dataLocation.results): null
-          numberPage == 6? setLocationPage6(dataLocation.results): null
-        }
-        fetchLocation()
+    for (let numberPage = 1; numberPage < 7; numberPage++){
+      const fetchLocation = async () => {
+        let urlLocation = `https://rickandmortyapi.com/api/location?page=${numberPage}`
+        let dataLocation = await fetch(urlLocation).then(respon => respon.json())
+        numberPage == 1? setLocationPage1(dataLocation.results): null
+        numberPage == 2? setLocationPage2(dataLocation.results): null
+        numberPage == 3? setLocationPage3(dataLocation.results): null
+        numberPage == 4? setLocationPage4(dataLocation.results): null
+        numberPage == 5? setLocationPage5(dataLocation.results): null
+        numberPage == 6? setLocationPage6(dataLocation.results): null
       }
+      fetchLocation()
+    }
   },[])
 
   useEffect(()=> {
@@ -39,7 +39,6 @@ function App() {
   useEffect(()=> {
     if(dataLocationTotal.length){
       setLocation(dataLocationTotal[Math.round(Math.random()*dataLocationTotal.length)].url)
-      console.log(location)
     }
   },[dataLocationTotal])
   
@@ -53,7 +52,6 @@ function App() {
     }
   }
   setLocationValue()
-  console.log(location)
   
   return (
     <div className="App">

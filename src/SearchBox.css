@@ -18,33 +18,33 @@ input{
     outline:none;
     border:0.3rem solid white;
 }
-  ::placeholder{
-    text-align: center;
-    color: rgb(85, 85, 85);
-    
-  }
-  input:focus {
-    height: 3.3rem;
-    width: 35%;
-    color: rgb(34, 34, 34);
-    background-color: rgba(173, 173, 173, 0.87);
-    outline:none;
-    border:0.3rem solid white;
-  }
 
-  button{
-    width: 40%;
-    font-size: 1.3rem;
-    height:3.5rem;
-    margin-bottom: 2%;
-    background-color: rgba(155, 39, 39, 0.897);
-    color:white;
-    border-radius: 0.4rem;
-    border: none;
-    cursor: pointer;
-   
-  }
-  button:hover{
-    background-color: rgb(228, 48, 48);
-  }
- 
+::placeholder{
+  text-align: center;
+  color: rgb(85, 85, 85);
+}
+
+input:focus {
+  height: 3.3rem;
+  width: 35%;
+  color: rgb(34, 34, 34);
+  background-color: rgba(173, 173, 173, 0.87);
+  outline:none;
+  border:0.3rem solid white;
+}
+
+button{
+  width: 40%;
+  font-size: 1.3rem;
+  height:3.5rem;
+  margin-bottom: 2%;
+  background-color: rgba(155, 39, 39, 0.897);
+  color:white;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(228, 48, 48);
+}

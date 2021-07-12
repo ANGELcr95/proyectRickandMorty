@@ -4,8 +4,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     height: auto;
-
 }
+
 .LocationInfo h3{
     font-family: 'Creepster', cursive;
     font-size: 2.6rem;

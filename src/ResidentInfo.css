@@ -17,25 +17,40 @@
 }
 
 .TextResidentInfo:hover{
-  background-color: rgba(178, 233, 90, 0.911);
-  border-top:  0.3rem solid rgb(41, 171, 231);
+  background-color: rgba(178, 233, 90, 0.87);
+  border-top:  0.3rem solid rgb(8, 163, 235);
   cursor: pointer;
 }
 
 .Name{
-    font-size: 2rem;
-    color: rgb(241, 59, 26);
-    font-weight:100;
+  font-size: 2rem;
+  color: rgb(18, 179, 207);
+  font-weight:100;
+}
+
+.Alive{
+  color: greenyellow;
+  font-size: 1.7rem;
+  -webkit-text-stroke: 1px rgb(19, 19, 19);
+  font-weight: 900;
+}
+
+.Dead{
+  color: red;
+  font-size: 1.7rem;
+  -webkit-text-stroke: 1px rgb(19, 19, 19);
+  font-weight: 900;
 }
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
   }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
